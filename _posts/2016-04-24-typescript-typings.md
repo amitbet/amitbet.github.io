@@ -1,7 +1,11 @@
 ---
 layout: post
-category : pages
-tags : [how-to, jekyll]
+title: "Typescript: sharing typings between modules"
+date: 2016-04-24 21:25:06
+tags : [NodeJS, typescript]
+category : typescript
+description: Explaining about typescript modules and typings, and how to properly use them to get a fully typed application
+toc: true
 ---
 
 # What's this 'sharing typings' that you speak of?
@@ -21,7 +25,7 @@ When using the '__typings__' utility to install type files you may get two forms
 ## Ambient definitions
 these definition style will usually be seen in JS modules coded by hand, since it's main purpose is making it easier to cram several module definitions in the same file, it uses the 'declare module' keywords to define several separate module declarations:
 
-```typescript
+```javascript
 declare module "url" {
     export interface Url {
        protocol?: string;
@@ -42,7 +46,7 @@ this way large definition bodies like 'node.d.ts' can be written without fragmen
 
 ## Regular external definitions 
 usually TS auto generated module definitions look like the below example, they include only one module per file, similar to the way the original external module was written:
-```typescript
+```javascript
 import {Worker} from './worker';
 export declare class Manager {
   constructor(name: string, id:number);
