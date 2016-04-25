@@ -45,16 +45,18 @@ declare module "path" {
 this way large definition bodies like 'node.d.ts' can be written without fragmenting it into many smaller definition files.
 
 ## Regular external definitions 
-usually TS auto generated module definitions look like the below example, they include only one module per file, similar to the way the original external module was written:  
+usually TS auto generated module definitions look like the below example, they include only one module per file, similar to the way the original external module was written:   
 
 ```javascript
 import {Worker} from './worker';
+
 export declare class Manager {
   constructor(name: string, id:number);
   privage _workers;
   addWorker(w: Worker):void;
 }
-```
+
+```  
 
 # Using the typings utility:
 Using typings is very similar to npm, except for the extra need to provide whether or not the definition you want is ambient. 
