@@ -2,7 +2,7 @@
 layout: post
 title: "Typescript: sharing typings between modules"
 date: 2016-04-24 21:25:06
-tags : [NodeJS, typescript]
+tags : [NodeJS, typescript, typings]
 category : typescript
 description: Explaining about typescript modules and typings, and how to properly use them to get a fully typed application
 toc: true
