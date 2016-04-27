@@ -1,7 +1,7 @@
 # Jekyll configuration
 
-name: Blog Name
-description: Software Developer
+name: Amit's Blog
+description: Software Dev & Architect
 
 # Url is currently only used only for the RSS feed in feed.xml
 url: http://amitbet.github.io
@@ -11,9 +11,9 @@ url: http://amitbet.github.io
 baseurl: ''
 
 social:
-  github: amitbet
+  github: 'amitbet'
   stackoverflow: ''
-  linkedin:
+  linkedin: 'https://www.linkedin.com/in/amit-bezalel-20a54239'
   instagram: ''
   lastfm: ''
   rss: feed.xml
