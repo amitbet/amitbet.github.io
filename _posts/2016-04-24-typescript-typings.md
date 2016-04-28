@@ -105,4 +105,4 @@ typescript has an issue with classes that have private members & functions, it w
 So if: A-B-C and  A-C, a type 'a' might be different from another 'a' coming from b (b.a)...
 This can be solved by creating an interface in A, and exporting it instead of the class. this will eliminate the problem, since the interface has no private types and will be validated according to it's type name (so no new definitions will be created in module B for the types coming from A).
 
-### 
+### a
